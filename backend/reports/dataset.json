@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-27T07:08:14.316655+00:00",
+  "name": "Paddy",
+  "version": "1",
+  "labels": [
+    "Raw",
+    "Ripe"
+  ],
+  "source_url": "https://universe.roboflow.com/agrisense-dataset/paddy-o34tk",
+  "license": "CC BY 4.0",
+  "metadata_source": "dataset/README.dataset.txt; dataset/README.roboflow.txt",
+  "exported_at": "2024-06-11",
+  "preprocessing": [
+    "EXIF auto-orientation",
+    "Resize to 640 \u00d7 640 (stretch)"
+  ],
+  "augmentation": "No augmentation applied during the documented Roboflow export.",
+  "splits": [
+    {
+      "name": "train",
+      "counts": {
+        "Raw": 300,
+        "Ripe": 300
+      },
+      "total": 600
+    },
+    {
+      "name": "valid",
+      "counts": {
+        "Raw": 100,
+        "Ripe": 100
+      },
+      "total": 200
+    },
+    {
+      "name": "test",
+      "counts": {
+        "Raw": 88,
+        "Ripe": 101
+      },
+      "total": 189
+    }
+  ],
+  "total": 989,
+  "class_totals": {
+    "Raw": 488,
+    "Ripe": 501
+  }
+}

@@ -1,0 +1,1196 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-10-27T06:57:31.667250+00:00",
+  "model": "MobileNetV2",
+  "model_sha256": "5c2558b002eb564378e3af253f04593797a3808b5c47352c57e02f37d9ae2008",
+  "dataset": "dataset/test",
+  "dataset_sha256": "03d32ebff2047d879299599d4f2e4919923cf8c918f50c37ea2f9f9ed3fc43e6",
+  "labels": [
+    "Raw",
+    "Ripe"
+  ],
+  "threshold": "logit > 0 = Ripe; otherwise Raw",
+  "preprocessing": "EXIF orientation, RGB, bilinear resize to model input, pixel / 127.5 - 1",
+  "input_shape": [
+    1,
+    160,
+    160,
+    3
+  ],
+  "exact_duplicate_test_images": 0,
+  "exact_test_overlap_with_train_valid": 0,
+  "skipped_count": 0,
+  "accuracy": 0.9523809523809523,
+  "macro_avg": {
+    "precision": 0.9517268445839875,
+    "recall": 0.9532515751575157,
+    "f1": 0.9522472698688975
+  },
+  "per_class": {
+    "Raw": {
+      "precision": 0.9340659340659341,
+      "recall": 0.9659090909090909,
+      "f1": 0.9497206703910615,
+      "support": 88
+    },
+    "Ripe": {
+      "precision": 0.9693877551020408,
+      "recall": 0.9405940594059405,
+      "f1": 0.9547738693467337,
+      "support": 101
+    }
+  },
+  "sample_count": 189,
+  "correct_count": 180,
+  "confusion_matrix": [
+    [
+      85,
+      3
+    ],
+    [
+      6,
+      95
+    ]
+  ],
+  "limitations": [
+    "Labels follow the dataset folder names and the notebook mapping; labels have not been independently audited.",
+    "Exact-byte overlap checks do not detect resized, augmented, or adjacent video frames. The data split is not verified to be independent.",
+    "These metrics describe the included test split, not field accuracy or harvest timing."
+  ],
+  "predictions": [
+    {
+      "file": "test/Raw/00000023_jpg.rf.195cd2cd87c1fd9560e902262a7e6f51.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.21193581342228235
+    },
+    {
+      "file": "test/Raw/00000137_jpg.rf.b716d48a59533a78518b5dce47cdf309.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.11741703069649242
+    },
+    {
+      "file": "test/Raw/00000152_jpg.rf.bf33e9705eed708e8f9257af658bcd44.jpg",
+      "actual": "Raw",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9123909471507182
+    },
+    {
+      "file": "test/Raw/IMG_0242_JPG_jpg.rf.62bfb72aa8b003d6e309543fd92af883.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.02025429314080826
+    },
+    {
+      "file": "test/Raw/IMG_0245_JPG_jpg.rf.9ade7c2de3aa49a7e3db16bb5b55d920.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.051686971301583
+    },
+    {
+      "file": "test/Raw/IMG_0247_JPG_jpg.rf.10bdb38cecd9ed153f5ed9baa722bc89.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.011087149716871076
+    },
+    {
+      "file": "test/Raw/IMG_0247_JPG_jpg.rf.1387b4dc2b1e29493f3c94fa403c2913.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.04476458785855807
+    },
+    {
+      "file": "test/Raw/IMG_0250_JPG_jpg.rf.4635470693ddbed187b6505e33612bb9.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.014324206137839501
+    },
+    {
+      "file": "test/Raw/IMG_0250_JPG_jpg.rf.86ff6425ef9908d0cccbae85ee304781.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.021330555149410756
+    },
+    {
+      "file": "test/Raw/IMG_0251_JPG_jpg.rf.293aabde65bc8764c8db54e127ce0397.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.005134644513042409
+    },
+    {
+      "file": "test/Raw/IMG_0251_JPG_jpg.rf.e57e26c6520fe72f9f0a85ba93d3f116.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0015390136777611676
+    },
+    {
+      "file": "test/Raw/IMG_0253_JPG_jpg.rf.d762a8950b7147b7cd20f1f88f9be3f0.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.004072653184301854
+    },
+    {
+      "file": "test/Raw/IMG_0258_JPG_jpg.rf.7a84649eabd61dd04150a361e6e5fc7e.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.00949334605144791
+    },
+    {
+      "file": "test/Raw/IMG_0259_JPG_jpg.rf.5a8792907cf8b05919b967a3ba90885e.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.02225393168269959
+    },
+    {
+      "file": "test/Raw/IMG_0274_JPG_jpg.rf.ea09784c6efda9a3cdb35d0ca860cf75.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.005420934439258116
+    },
+    {
+      "file": "test/Raw/IMG_0278_JPG_jpg.rf.359e6b8b19343675e200e00e0991f2b2.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0018877193498620908
+    },
+    {
+      "file": "test/Raw/IMG_0278_JPG_jpg.rf.53613b522a3c1c15ef262cb7fc8cbaa4.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.03325934210018559
+    },
+    {
+      "file": "test/Raw/IMG_0278_JPG_jpg.rf.b2315c9b7b53171bb4582709a7b2aee8.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.004339684192381458
+    },
+    {
+      "file": "test/Raw/IMG_0284_JPG_jpg.rf.377fb744c27e073d0c4da4fcc4c64b96.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.01068808399248236
+    },
+    {
+      "file": "test/Raw/IMG_0284_JPG_jpg.rf.555ebf16abe430a79ca78db21fec2094.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.000947850663976805
+    },
+    {
+      "file": "test/Raw/IMG_0284_JPG_jpg.rf.9c7f52ee36044b4b58a213def3d8d3d5.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.008022581958231393
+    },
+    {
+      "file": "test/Raw/IMG_0286_JPG_jpg.rf.8d29712836610d2cb8268de5748c56d4.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.010005556757428303
+    },
+    {
+      "file": "test/Raw/IMG_0292_JPG_jpg.rf.235cbf60b5635c6549b2b03213de3fb1.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.001380964786348612
+    },
+    {
+      "file": "test/Raw/IMG_0296_JPG_jpg.rf.1feac5b17155e72ee2656dd1e4ef00a4.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.010153231051639462
+    },
+    {
+      "file": "test/Raw/IMG_0304_JPG_jpg.rf.5b5743ef812c7346b54d342e887b9ce7.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.001130336287245261
+    },
+    {
+      "file": "test/Raw/IMG_0310_JPG_jpg.rf.2b758de50ddadd28ef650408dc4760e2.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0025567962444637783
+    },
+    {
+      "file": "test/Raw/IMG_0310_JPG_jpg.rf.5984fb3ac20026b18579dd6e83a683b5.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.005896611553765476
+    },
+    {
+      "file": "test/Raw/IMG_0310_JPG_jpg.rf.72addd363ab6fce4b29b4065d978e997.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.03648701829922367
+    },
+    {
+      "file": "test/Raw/IMG_0313_JPG_jpg.rf.05ec03a79a8cb93fb64bce9833bdccf4.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0022035848885085156
+    },
+    {
+      "file": "test/Raw/IMG_0316_JPG_jpg.rf.f2dfd1e31e724d375eac2c8e9abfcd4b.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.07323446650613631
+    },
+    {
+      "file": "test/Raw/IMG_0317_JPG_jpg.rf.ce95cb5483b996e3faa4e17e698687b0.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.015284564719355707
+    },
+    {
+      "file": "test/Raw/IMG_0318_JPG_jpg.rf.7b9429eda5900743fe99e904b66b4d58.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.016233684321856217
+    },
+    {
+      "file": "test/Raw/IMG_0321_JPG_jpg.rf.cdced7295c1855e902ed6a3c6986783a.jpg",
+      "actual": "Raw",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7089196894672015
+    },
+    {
+      "file": "test/Raw/IMG_0322_JPG_jpg.rf.e3e3b21d6295821426b3c4f8df0c9642.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.2739379794992526
+    },
+    {
+      "file": "test/Raw/IMG_0326_JPG_jpg.rf.8f4c43bab62ada737ab1ce1370b34b83.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.05316765523735802
+    },
+    {
+      "file": "test/Raw/IMG_0329_JPG_jpg.rf.c35b7378e0a6c9a20809512c5f97b29c.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.4619155777561699
+    },
+    {
+      "file": "test/Raw/IMG_0330_JPG_jpg.rf.58933cf9040c1807985a35ca0972d5bd.jpg",
+      "actual": "Raw",
+      "predicted": "Ripe",
+      "ripe_probability": 0.6745294410958054
+    },
+    {
+      "file": "test/Raw/IMG_0331_JPG_jpg.rf.41b6e2992e39e553d6bdc1d60e0186c9.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.20572055538538395
+    },
+    {
+      "file": "test/Raw/IMG_0332_JPG_jpg.rf.4976f48ac37e2a5608618fd88932ce6a.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.32157141708370923
+    },
+    {
+      "file": "test/Raw/IMG_20220221_163010_jpg.rf.a7e84a2a33f16ff59b33f68ecd48ca06.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.010144493653066565
+    },
+    {
+      "file": "test/Raw/IMG_20220221_163310_jpg.rf.8b3d60ec3b0ee57989936d0fdec225e5.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.1653265481082922
+    },
+    {
+      "file": "test/Raw/IMG_20220221_163656_jpg.rf.cd1dcac3e2320aaf2061945d290e6639.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.06829838314742716
+    },
+    {
+      "file": "test/Raw/IMG_20220221_164054_jpg.rf.37ddff069077d9af8a470cc4f528e689.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.08349244358184214
+    },
+    {
+      "file": "test/Raw/IMG_20220221_164054_jpg.rf.e775f89346db7fbe0685417414f1b22e.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.002817406093216224
+    },
+    {
+      "file": "test/Raw/IMG_20220221_164141_jpg.rf.ea07aee3b15f3b8732e4108af3533fd4.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.11658186505937664
+    },
+    {
+      "file": "test/Raw/IMG_20220221_164513_jpg.rf.af6a92e6aad2e3a7e0e0cdd7471adb61.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.02120467027660273
+    },
+    {
+      "file": "test/Raw/IMG_20220221_164803_jpg.rf.a0b3de9b00c72a0ebf22c0671e1a0212.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.008857383582291201
+    },
+    {
+      "file": "test/Raw/IMG_20220221_165219_jpg.rf.182ff3be3017bbe413e299fd9f3174fc.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.006193401037748175
+    },
+    {
+      "file": "test/Raw/IMG_20220221_165318_jpg.rf.0eb5ae57a8489b580e470bd144fb8cab.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0562046563738547
+    },
+    {
+      "file": "test/Raw/IMG_20220221_165318_jpg.rf.70271be5be4933ed448ea91b943d5da8.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0046467902424812335
+    },
+    {
+      "file": "test/Raw/IMG_20220221_165321_jpg.rf.8ef52cff379a70478b359a3c8c73a7c2.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.05757006801926804
+    },
+    {
+      "file": "test/Raw/IMG_20220221_165436_jpg.rf.33ae18f4e666be3a57d70c4b44da62e3.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.24752059708933824
+    },
+    {
+      "file": "test/Raw/IMG_20220221_165646_jpg.rf.25c6dbbff203fd5e7800af71f4450bb6.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.028817951680599536
+    },
+    {
+      "file": "test/Raw/IMG_20220221_170054_jpg.rf.1779708df24fe34b59bcaba0db2880e7.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.005976918090814721
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00036_0005_jpg.rf.82249be1ecee515d0aa004e040ba645c.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.001971192822452991
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00144_0017_jpg.rf.0bfc979206dda0b645d67dfe62b59e6e.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0008336210180000083
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00405_0046_jpg.rf.96a22c4a152744dad693555263a19d51.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.001603820466140078
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00567_0064_jpg.rf.d24bc0399bd74ae2f49cbff551f7a61a.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0015298620514081515
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00594_0067_jpg.rf.cc5bc37d287aea3940cc5ab4355a5824.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0032007029367900055
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00603_0068_jpg.rf.f4a2a839cb931e889c433420d2134b66.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0030272794620831802
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00621_0070_jpg.rf.42663e44a5771bb06ebf12670cfa1b78.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.004367432239536148
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00666_0075_jpg.rf.840e826f6de5d9bb959abd87bb443c6d.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0038584230516294817
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00684_0077_jpg.rf.d4b9427c63c23f7f4615650c7ebbc8d1.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0018944750438694615
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00891_0100_jpg.rf.75d1e6fc0345b5140c03da57930dec6b.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.030214405430323294
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00936_0105_jpg.rf.098fb42cda485fb2d45ca4efc12f4a9a.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.05470706069785359
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00945_0106_jpg.rf.5ad8ee810897bf945da621d856ceb303.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.03741014719279843
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00990_0111_jpg.rf.819165789cfc0a32aa22b537f6679dd7.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.008103432601784715
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame00999_0112_jpg.rf.43f244f17f8616b3059309d94a5d0c13.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.017188594566453302
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01080_0121_jpg.rf.bc5ff2b31a73a46d11ada44556c9f991.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.009246950873690278
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01161_0130_jpg.rf.e536316ba09721da8ed6ddbf541de465.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.003459216103858627
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01215_0136_jpg.rf.5bcf89eaa5443b12af51f8cb3d78b94d.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0023209620112326747
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01251_0140_jpg.rf.4c4a27d63a1893a61cfcb9373bb6b550.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.008246546752315188
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01359_0152_jpg.rf.a506048450765cea75250fc8c3fa8526.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.007484600352809903
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01404_0157_jpg.rf.2cb019cc23fe85082cf947ab8739ad4e.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0023503654558203447
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01422_0159_jpg.rf.c1e2a74bc476713a57719913fa1aad71.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.002200472181597896
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01575_0176_jpg.rf.c8bf05e01e058dc67a30193eafdedf74.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0010254385259801733
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01710_0191_jpg.rf.b73390af19b6725e540b106d0597e9f1.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.006196800640349252
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01854_0207_jpg.rf.3bcf75af79bda4911c789fbe19ff8a45.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0023464943973752683
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01980_0221_jpg.rf.f720ff3f046698e13ddc190910b35426.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0035568361889594933
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01989_0222_jpg.rf.97371315ba617380c7ca2fbb4fbe093d.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0032293119546670866
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame01998_0223_jpg.rf.b036f00f58da648dc702c22591228412.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0054545233547298195
+    },
+    {
+      "file": "test/Raw/VID_20211114_174507-mp4-frame02007_0224_jpg.rf.7f517c991266d69351fdb773e8ba3462.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.007529778044812106
+    },
+    {
+      "file": "test/Raw/padi-blm-matang_20_jpg.rf.582eb3e653afeb78798b9c17cfd59241.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.03615510294591029
+    },
+    {
+      "file": "test/Raw/padi-blm-matang_22_jpg.rf.90786aa20c614862fa4242e0ab33aa99.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.05476183004769267
+    },
+    {
+      "file": "test/Raw/padi-blm-matang_32_jpg.rf.5666ca371d5878b019731788c1b101f8.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.030567654726738402
+    },
+    {
+      "file": "test/Raw/padi-blm-matang_39_jpg.rf.7200ae40e4bdbb9273674a58cca5ca7a.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.004466331442625824
+    },
+    {
+      "file": "test/Raw/padi-blm-matang_4_jpg.rf.7b28fd20e7cbe261394cf165e41ae8de.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.0025901735821353515
+    },
+    {
+      "file": "test/Raw/padi-blm-matang_5_jpg.rf.5385ab33e700a0804c6a00a9190177d9.jpg",
+      "actual": "Raw",
+      "predicted": "Raw",
+      "ripe_probability": 0.036952168918844085
+    },
+    {
+      "file": "test/Ripe/00000011_jpg.rf.880b9685cf7bf2ce2f32eb5935006ac1.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9171212722287735
+    },
+    {
+      "file": "test/Ripe/00000051_jpg.rf.30a168a6582fe6d2c6bcbcfce70f7022.jpg",
+      "actual": "Ripe",
+      "predicted": "Raw",
+      "ripe_probability": 0.4517038273709213
+    },
+    {
+      "file": "test/Ripe/00000104_jpg.rf.fe2c1458a72bc48a695f9928f3e782f5.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.966404488084162
+    },
+    {
+      "file": "test/Ripe/00000187_jpg.rf.524aee8fcaa016bbd8d1be03351d6ba8.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9539146306377065
+    },
+    {
+      "file": "test/Ripe/00000269_jpg.rf.10edaf71abc434d73a39b0b8ba2c110b.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9814547807890203
+    },
+    {
+      "file": "test/Ripe/00000276_jpg.rf.079ce5c1c291ee38ea9ff086a026f46a.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8784171924413533
+    },
+    {
+      "file": "test/Ripe/Cuplikan-layar-2023-10-24-144118_png_jpg.rf.9d7fe851fcd4002b7dfc8ddd5ccfb36c.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9184337647074617
+    },
+    {
+      "file": "test/Ripe/Cuplikan-layar-2023-10-24-144551_png_jpg.rf.fa47cef06a8e8976c1d2a5ff21ae15dd.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8535601102019893
+    },
+    {
+      "file": "test/Ripe/Screenshot_2023_1021_213507_png_jpg.rf.1e379e2deb26c6cf12ca0ed6101ed138.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7235667122883358
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00000_0001_jpg.rf.21e61bae12f4af8ce168b243c233c933.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.986759403343353
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00015_0002_jpg.rf.00bd9e1c1842782e0e783874f44c3590.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9945552147982961
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00105_0008_jpg.rf.ec83a8235b11c0d387735a709c2b1533.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9893730832280344
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00180_0013_jpg.rf.31b9c8c499510ce09f4f24eebf2c8e8c.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9934533335111726
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00210_0015_jpg.rf.3dd91e68eff4eb621b24f7efc0853d23.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9945967323059672
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00255_0018_jpg.rf.8d339a1074cca63d79387d16888f69f2.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9976429847369306
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00345_0024_jpg.rf.2ff88c3c18312bd69f3c6fb78e47c152.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.964125176358663
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00390_0027_jpg.rf.dd6a8e6920908e11529f779babb38495.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9796672904757269
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00525_0036_jpg.rf.0c80ab618814e91de8e5db9af058723b.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9903401440959567
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00570_0039_jpg.rf.8e1fbabc332dc9c4e0f105ae1942acbe.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9918507304508057
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00585_0040_jpg.rf.69c3d87eafcf6df6bcc6cb17ccb00580.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9749650769313187
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00615_0042_jpg.rf.698ad8f71781329c555623943bde5e68.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9764706493426747
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00720_0049_jpg.rf.92c9a5849c80d46071a6c0972991be4c.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9962313132146998
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00795_0054_jpg.rf.03ba07d5985affa0885e60c97b2274c8.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9839263215396226
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00840_0057_jpg.rf.d9e0e07113e55630ece2af2c72dc1d42.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9853014773234324
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00840_0057_jpg.rf.fa26760c8867c2ef731fc7608e52aba7.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9828984990888967
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00855_0058_jpg.rf.f1cbfc9fb80758869771fc4ced4b4d2d.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9921877268067818
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame00915_0062_jpg.rf.e7a943755c5e32da47797d0f4451ef9d.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9908552936607495
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01020_0069_jpg.rf.343479120db5488ccd4740e7a089c7e0.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9925461823324855
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01020_0069_jpg.rf.5aa311435a4226e2694df9ad7ce4e8ba.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9909555034500943
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01035_0070_jpg.rf.6aa0bee6e3e2b30dd0e4090a59af2c35.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9931304730639219
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01065_0072_jpg.rf.88662d56ca506f99884987023d14af13.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9856447712223713
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01095_0074_jpg.rf.822d699fe5d159363f085af0d22788f1.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9846354232438401
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01095_0074_jpg.rf.91a380bdebd406ff56c60945e518453d.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9808081434985271
+    },
+    {
+      "file": "test/Ripe/VID-20211116-WA0022-mp4-frame01110_0075_jpg.rf.b4289ea5ea65c400903807a22d5a0f95.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9953141227739032
+    },
+    {
+      "file": "test/Ripe/image-1-1-_png_jpg.rf.70d4829e23a16ebe8fecbfbd636f035d.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9787850989972021
+    },
+    {
+      "file": "test/Ripe/image-1-_jpeg_jpg.rf.5fed33257fc8acabf0b16d5af72ee666.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9835784625876142
+    },
+    {
+      "file": "test/Ripe/image-1-_jpg.rf.cac204d1baa101fb979c6320b1b7a3f2.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8000872284649494
+    },
+    {
+      "file": "test/Ripe/image-10-_jpeg_jpg.rf.86c411d14234ead1432c3ed722556fba.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9609301320158582
+    },
+    {
+      "file": "test/Ripe/image-11-_jpg.rf.b7210664304a82a28c5e1d550cfa4fe5.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9577761363860003
+    },
+    {
+      "file": "test/Ripe/image-12-_jpeg_jpg.rf.8e8f4b80973d28490adbb9a5c737c1fb.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8461673236143139
+    },
+    {
+      "file": "test/Ripe/image-12-_jpg.rf.2f5a00868abda51669517c2450eecc98.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9326141688014827
+    },
+    {
+      "file": "test/Ripe/image-13-_jpg.rf.28a4d4ac5e1257f4d6735d0512d168d4.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.721267145072535
+    },
+    {
+      "file": "test/Ripe/image-14-_jpg.rf.68298aec637deda51effdf5baf1c39bc.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9959017993377195
+    },
+    {
+      "file": "test/Ripe/image-15-_jpg.rf.7f7691e69cd6b6fa98f31c599f83c313.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9887355039698715
+    },
+    {
+      "file": "test/Ripe/image-18-_jpg.rf.0a073a39361674ee00d755f7f11c70b7.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7934108961498303
+    },
+    {
+      "file": "test/Ripe/image-19-_jpg.rf.c477fc540ae9681c9d30a8fc2df488de.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8817857478165168
+    },
+    {
+      "file": "test/Ripe/image-2-_jpeg_jpg.rf.90613e620fd343d0951e6fbd3d7daf15.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.6311494559440601
+    },
+    {
+      "file": "test/Ripe/image-20-_jpg.rf.d9cf27f8de63524663fa3990aab716aa.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8260292428750353
+    },
+    {
+      "file": "test/Ripe/image-3-_jpeg_jpg.rf.8b8633d468fe8df4699f9cba163b20a1.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9241715655948246
+    },
+    {
+      "file": "test/Ripe/image-3-_jpg.rf.ac8608dee6822d65491dd463a0724e9a.jpg",
+      "actual": "Ripe",
+      "predicted": "Raw",
+      "ripe_probability": 0.2386487066241496
+    },
+    {
+      "file": "test/Ripe/image-5-_jpeg_jpg.rf.10db9c245c10d641cd8e9661b436d3bd.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.921005486252834
+    },
+    {
+      "file": "test/Ripe/image-6-_jpeg_jpg.rf.4dbe85f78b6718730cc73f00631c4c0a.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.99514994587569
+    },
+    {
+      "file": "test/Ripe/image-6-_jpg.rf.f028d2d647dc3ae43f90f188d819be9e.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.984556811573236
+    },
+    {
+      "file": "test/Ripe/image-7-_jpeg_jpg.rf.d351250ad353417265a2b5cd92ca0bf3.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.5329422415726114
+    },
+    {
+      "file": "test/Ripe/image-7-_jpg.rf.c88835f2314f8ae20211025ea71c8ff7.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8479969404342085
+    },
+    {
+      "file": "test/Ripe/image-8-_jpeg_jpg.rf.e6b39fc9eb4d014c310241f78068e41d.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8217719641223521
+    },
+    {
+      "file": "test/Ripe/image-8-_jpg.rf.2569beec65ad046f859aa9f658c81128.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.6230329269652801
+    },
+    {
+      "file": "test/Ripe/image-9-_jpeg_jpg.rf.e83affb0ea18c1f8bcbd6e542aae617a.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9728449498948086
+    },
+    {
+      "file": "test/Ripe/istockphoto-1151784210-612x612_jpg.rf.8f7d3c42b527d0b5ae0398231a0ec047.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8998447361136895
+    },
+    {
+      "file": "test/Ripe/istockphoto-1208500269-612x612_jpg.rf.b5179d9d1d1d01342a32d38df105b8ae.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9615787119339576
+    },
+    {
+      "file": "test/Ripe/istockphoto-1212118743-612x612_jpg.rf.a00514fdf2e190421e0e56edd5de2985.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9679073667216934
+    },
+    {
+      "file": "test/Ripe/istockphoto-1276454630-640x640_jpg.rf.5752162ef423ce6f8625e4dd680952d4.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.96357262974757
+    },
+    {
+      "file": "test/Ripe/istockphoto-1327118510-612x612_jpg.rf.572c2e8e294754a4ab905cdc31638a1b.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.6244637707339651
+    },
+    {
+      "file": "test/Ripe/istockphoto-1344292091-612x612_jpg.rf.9a6edca082bc513e7a7aa5a81e81054f.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8009909088243752
+    },
+    {
+      "file": "test/Ripe/istockphoto-1347197742-640x640_jpg.rf.7fee4361bcb938af35f98ee97ba03f48.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8381399217759624
+    },
+    {
+      "file": "test/Ripe/istockphoto-1349682872-612x612_jpg.rf.bc1c33b54c6ec8e2a95d519f9b2b89dc.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7820179316479136
+    },
+    {
+      "file": "test/Ripe/istockphoto-1419313897-612x612_jpg.rf.292b1c7a7d0bd07ac69ac739f91e8276.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.997602225701574
+    },
+    {
+      "file": "test/Ripe/istockphoto-483827022-612x612_jpg.rf.5b75e72b49956bca4bbfc9659f8fb648.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9956627339786366
+    },
+    {
+      "file": "test/Ripe/istockphoto-497711693-612x612_jpg.rf.424fc178b52d4fc444aa324f35daeebf.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9433030894474492
+    },
+    {
+      "file": "test/Ripe/istockphoto-621481948-612x612_jpg.rf.2435cf56cdbf79733432acf1b97dc26c.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.947761317362807
+    },
+    {
+      "file": "test/Ripe/istockphoto-621816784-612x612_jpg.rf.dd9b46db94c5569726e25ae7908bc198.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9983881584955246
+    },
+    {
+      "file": "test/Ripe/istockphoto-622913884-612x612_jpg.rf.11fe199ff4d89399026a16ae8ea7fb5d.jpg",
+      "actual": "Ripe",
+      "predicted": "Raw",
+      "ripe_probability": 0.454381650977929
+    },
+    {
+      "file": "test/Ripe/istockphoto-622914480-612x612_jpg.rf.b47f290f44e3c42e986335af8ffbd728.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9502524916555991
+    },
+    {
+      "file": "test/Ripe/istockphoto-622925154-612x612_jpg.rf.4300a94e2bfcc67f2a7be6d7ddf56e95.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.699997356157123
+    },
+    {
+      "file": "test/Ripe/paddy107_jpg.rf.cc078b1037e55eaf84d780840f7d04f7.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7509794258002195
+    },
+    {
+      "file": "test/Ripe/paddy116_jpg.rf.8f5391792929c98af3d6acdc29c325fe.jpg",
+      "actual": "Ripe",
+      "predicted": "Raw",
+      "ripe_probability": 0.4992045610286696
+    },
+    {
+      "file": "test/Ripe/paddy140_jpg.rf.c3c008df2de76e90109433deee64a058.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8800835043966064
+    },
+    {
+      "file": "test/Ripe/paddy145_jpg.rf.f3a0093cc9bb6bdacee8749c3fb282c3.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9991009999607123
+    },
+    {
+      "file": "test/Ripe/paddy155_jpg.rf.aa107a78e27ebf8636aa23ee507f4c56.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9661507877615577
+    },
+    {
+      "file": "test/Ripe/paddy15_jpg.rf.0bfb7a0826906da46322d4a00aca6e5b.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7222837775284808
+    },
+    {
+      "file": "test/Ripe/paddy169_jpg.rf.67dfffa7b690e9457eb477a029f5c213.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9662376256473386
+    },
+    {
+      "file": "test/Ripe/paddy188_jpg.rf.199aecfc29964d3d1b3422360c3463d0.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.5422582712759667
+    },
+    {
+      "file": "test/Ripe/paddy192_jpg.rf.a4aa1e63ba3f32b60640a4c8a2653313.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8169999369304457
+    },
+    {
+      "file": "test/Ripe/paddy731_jpg.rf.63e788c38b08cd5db3f54ae483e4a4c0.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.90100772490029
+    },
+    {
+      "file": "test/Ripe/paddy739_jpg.rf.ba657afcf7f750f3633833543b1537ee.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8670528139555825
+    },
+    {
+      "file": "test/Ripe/paddy755_jpg.rf.3886aff61a79eb296c97c95e10a1db31.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7422811057349825
+    },
+    {
+      "file": "test/Ripe/paddy773_jpg.rf.bb9b6043df08f38a6dbc9412d5039609.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9332965226745066
+    },
+    {
+      "file": "test/Ripe/paddy774_jpg.rf.ed1b1e70f345b2cc4d29771baa6ac444.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8480087256695631
+    },
+    {
+      "file": "test/Ripe/paddy782_jpg.rf.a02700918a7b66d7d4c71c700700d957.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7491557021882069
+    },
+    {
+      "file": "test/Ripe/paddy791_jpg.rf.5dfa809a86fd3f112bd2da0042354c97.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.92621634737475
+    },
+    {
+      "file": "test/Ripe/paddy798_jpg.rf.ca8ca0e4dff6307e2bd78ff219230f44.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.5456013774445582
+    },
+    {
+      "file": "test/Ripe/paddy803_jpg.rf.a0f81e3140784ce89e6dda5ba2824bdd.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9477874689654402
+    },
+    {
+      "file": "test/Ripe/paddy805_jpg.rf.d050a011731ae4a456fd1c4650162045.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9931879211699673
+    },
+    {
+      "file": "test/Ripe/paddy809_jpg.rf.43805ca92c802e9ef09b03e4d98ab341.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9142232127664289
+    },
+    {
+      "file": "test/Ripe/paddy810_jpg.rf.72609c65eb6bebeda9718886d8bc525f.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.8532388748444613
+    },
+    {
+      "file": "test/Ripe/paddy811_jpg.rf.666e483c32a780b1b47c5f7429a4b546.jpg",
+      "actual": "Ripe",
+      "predicted": "Raw",
+      "ripe_probability": 0.2228524261420483
+    },
+    {
+      "file": "test/Ripe/paddy813_jpg.rf.667be33adae2b6700404ffa5b39e46f3.jpg",
+      "actual": "Ripe",
+      "predicted": "Raw",
+      "ripe_probability": 0.38343596286274134
+    },
+    {
+      "file": "test/Ripe/paddy818_jpg.rf.d6a51ae81509357cfe881bde655ee5f4.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.9674732170566287
+    },
+    {
+      "file": "test/Ripe/paddy820_jpg.rf.c0b9d9159e71c7f5abe3d9a1b668e577.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.760264314228792
+    },
+    {
+      "file": "test/Ripe/paddy826_jpg.rf.fddee37878c88e8b1faa5c0943364342.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.7632666013170195
+    },
+    {
+      "file": "test/Ripe/paddy881_jpg.rf.9bdc3fdcd382ebee20edfb6b4c2cd605.jpg",
+      "actual": "Ripe",
+      "predicted": "Ripe",
+      "ripe_probability": 0.6771029224876238
+    }
+  ]
+}

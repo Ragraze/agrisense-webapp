@@ -1,0 +1,9 @@
+**/node_modules
+**/.nuxt
+**/.output
+**/__pycache__
+.venv
+.git
+dataset
+notebook
+model
