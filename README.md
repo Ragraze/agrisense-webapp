@@ -52,7 +52,6 @@ model/                    Original model artifacts
 notebook/                 Training and experimentation notebook
 tflite/                  Runtime model (see path below)
 dataset/                  Training, validation, and test images
-docs/                     Screenshots and verification notes
 compose.yaml              Frontend and backend service definitions
 DESIGN.md                 Design direction and implementation rationale
 ```
@@ -253,7 +252,6 @@ npm run typecheck
 
 API tests cover Swagger availability, upload validation and size limits, preprocessing, logit interpretation, and model failure. Real-model smoke tests have also exercised the prediction endpoint using one Raw image and one Ripe image from `dataset/test`. Those two-image checks are integration smoke tests; the separate evaluation below covers the complete bundled test split.
 
-Browser verification and design-gate results are recorded in [docs/verification.md](docs/verification.md). Screenshots are available in [docs/mobile.png](docs/mobile.png) and [docs/desktop.png](docs/desktop.png).
 
 ## Troubleshooting
 
